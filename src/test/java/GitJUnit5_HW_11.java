@@ -1,6 +1,4 @@
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.selector.ByText;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -28,10 +26,5 @@ public class GitJUnit5_HW_11 {
         $("#wiki-pages-box").shouldHave(text("SoftAssertions"));
         $("#wiki-pages-box").find(byText("SoftAssertions")).click();
         $(".markdown-body").shouldHave(text("Using JUnit5 extend test class"));
-
-
     }
-
-
-
 }
