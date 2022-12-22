@@ -19,7 +19,7 @@ public class GitJUnit5_HW_11 {
 
     }
     @Test
-    void JUnit5Tests(){
+    void junit5Tests(){
         open("/selenide/selenide");
         $("#wiki-tab").click();
         $(".js-wiki-more-pages-link").click();
